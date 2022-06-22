@@ -1,0 +1,75 @@
+#bao-gia-body{
+    // style 22062022
+    .ss{
+        &__bang-gia {
+            padding: 64px 0;
+            @include respond-phone {
+              padding-top: 0;
+            }
+            .content {
+              &__head {
+                max-width: 900px;
+                @include respond-phone {
+                  max-width: 350px;
+                }
+              }
+              &__table {
+                text-align: center;
+                
+                table {
+                  border-spacing: 0px;
+                  &.non-mb{
+                    display: table;
+                    @include respond-phone{
+                        display: none;
+                    }
+                  }
+                  th,
+                  td {
+                    padding: 16px;
+                    border: 1px #B9B9B9 solid;
+                  }
+                  th {
+                    width: 25%;
+                    font-size: 22px;
+                    line-height: 27px;
+                    background: rgba(145, 126, 126, 0.36);
+                  }
+                  td , span{
+                    font-size: 22px;
+                    line-height: 27px;
+                  }
+                  
+                  
+                }
+                .flex{
+                    display: none;
+                    @include respond-phone{
+                        display: flex;
+                        .col-sm-6{
+                            width: 50%;
+                            &:last-child{
+                                height: 232px;
+                                overflow-y: scroll;
+                            }
+                        }
+                        table{
+                            tr{
+                                display: flex;
+                                flex-direction: column;
+                                th{
+                                    width: auto;
+                                }
+                                th, td, span{
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+              }
+            }
+          }
+    }
+}

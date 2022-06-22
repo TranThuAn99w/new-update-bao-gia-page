@@ -1,0 +1,797 @@
+#bao-gia-body {
+  margin: 0;
+  .ss {
+    p,
+    li {
+      a {
+        display: inline;
+        font-weight: 600;
+        color: #276ae3;
+        font-size: 16px;
+      }
+    }
+    &__head {
+      background-image: url("https://gtvseo.com/wp-content/uploads/2022/01/bg-blue1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include respond-tabPort {
+        background-image: url("https://gtvseo.com/wp-content/uploads/2022/01/bg-blue1-mb.png");
+      }
+      .container {
+        .pr2,
+        .px1,
+        .pl2 {
+          margin-bottom: 24px;
+          height: 100%;
+        }
+        @include respond-tabPort {
+          .pr2,
+          .px1,
+          .pl2 {
+            margin-bottom: 24px;
+          }
+        }
+        @include respond-phone {
+          .pr2,
+          .px1,
+          .pl2 {
+            padding: 0;
+          }
+        }
+        .content {
+          .title__head {
+            text-align: center;
+            @include respond-phone {
+              max-width: 350px;
+              margin-bottom: 0;
+            }
+            h1 {
+              font-size: 48px;
+              line-height: 64px;
+              @include respond-phone {
+                font-size: 28px;
+                line-height: 40px;
+              }
+            }
+            p {
+              font-size: 18px;
+              line-height: 32px;
+              @include respond-phone {
+                font-size: 14px;
+                line-height: 24px;
+              }
+            }
+            .btn {
+              background: transparent;
+              border: 1px solid #fff;
+              border-radius: 6px;
+              margin: 48px 0;
+              padding: 0;
+              a {
+                padding: 10px 32px !important;
+                font-size: 16px;
+                line-height: 24px;
+              }
+              @include respond-phone {
+                margin: 24px 0;
+                a {
+                  pad: 10px 32px !important;
+                }
+              }
+            }
+          }
+          &__boxs {
+            margin-bottom: 48px;
+            @include respond-phone {
+              margin-bottom: 0;
+            }
+            .card {
+              padding: 32px 24px;
+              box-shadow: 0px 22px 24px rgba(213, 207, 177, 0.331184);
+              &__title {
+                text-align: center;
+                margin-bottom: 8px;
+                h2 {
+                  font-size: 40px;
+                  line-height: 48px;
+                  margin-bottom: 48px;
+                }
+                p {
+                  color: rgba(0, 0, 0, 0.4);
+                  font-size: 15px;
+                  line-height: 18px;
+                }
+              }
+              &__info-price {
+                margin-bottom: 16px;
+                text-align: center;
+                h5 {
+                  font-size: 24px;
+                  line-height: 32px;
+                  margin-bottom: 8px;
+                }
+                p {
+                  font-size: 15px;
+                  line-height: 18px;
+                }
+              }
+              &__info-detail {
+                margin: 0;
+                list-style: none;
+                padding: 32px 0;
+                border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+                li {
+                  margin-bottom: 16px;
+                  .fa-check {
+                    margin-right: 12px;
+                  }
+                  span,
+                  .fa-check {
+                    font-size: 14px;
+                    line-height: 24px;
+                  }
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+              @include respond-phone {
+                .content__btns .btn {
+                  padding: 10px 0;
+                }
+              }
+            }
+          }
+          .note {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    // &__bang-gia {
+    //   padding: 64px 0;
+    //   @include respond-phone {
+    //     padding-top: 0;
+    //   }
+    //   .content {
+    //     &__head {
+    //       max-width: 900px;
+    //       @include respond-phone {
+    //         max-width: 350px;
+    //       }
+    //     }
+    //     &__table {
+    //       text-align: center;
+    //       table {
+    //         border: 0.5px solid #969bab;
+    //         border-spacing: 0px;
+    //         th,
+    //         td {
+    //           padding: 16px;
+    //         }
+    //         tr:nth-child(even) {
+    //           background-color: #eeeff4;
+    //         }
+    //         tr:nth-child(odd) {
+    //           background-color: #fff;
+    //         }
+    //         th {
+    //           font-size: 20px;
+    //           line-height: 30px;
+    //           &:first-child {
+    //             text-align: left;
+    //           }
+    //         }
+    //         td {
+    //           font-size: 14px;
+    //           line-height: 24px;
+    //           &:first-child {
+    //             text-align: left;
+    //           }
+    //         }
+    //         @include respond-phone {
+    //           tr {
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: center;
+    //             td:first-child {
+    //               text-align: center;
+    //             }
+    //           }
+    //           .head {
+    //             display: none;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    &__ban-nhan-duoc {
+      background-image: url("https://gtvseo.com/wp-content/uploads/2022/01/banner-ban-nhan-duoc-gi.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .content {
+        &__head {
+          max-width: 100%;
+        }
+        &__cards {
+          grid-template-columns: repeat(3, 1fr);
+          @include respond-tabPort {
+            grid-template-columns: 1fr;
+          }
+          .card {
+            padding: 40px 35px;
+            h3 {
+              min-height: 96px;
+              margin-bottom: 12px;
+              font-weight: 600;
+              @include respond-tabPort {
+                min-height: 0;
+                max-width: 95%;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__yeu-to {
+      .content {
+        &__head {
+          max-width: 700px;
+        }
+        &__cards {
+          grid-template-columns: repeat(3, 1fr);
+          @include respond-tabPort {
+            grid-template-columns: 1fr;
+          }
+          .card {
+            padding: 40px 35px;
+            h3 {
+              margin-bottom: 12px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    &__quy-trinh {
+      @include respond-phone {
+        padding-top: 0;
+      }
+      .content {
+        .indication {
+          align-items: center;
+          margin-bottom: 16px;
+          .circle {
+            width: 24px;
+            height: 24px;
+          }
+          .line {
+            width: 150px;
+            height: 1px;
+            border-bottom: 2px dashed rgba(39, 106, 227, 0.4);
+            margin-left: 24px;
+          }
+        }
+        &__cards {
+          grid-template-columns: repeat(5, 1fr);
+          @include respond-tabLand {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @include respond-tabPort {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include respond-phone {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          gap: 15px;
+          .card {
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    &__banner {
+      height: 500px;
+      background: url("https://gtvseo.com/wp-content/uploads/2022/01/banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      @include respond-phone {
+        height: 100%;
+      }
+      .content {
+        .flex {
+          align-items: center;
+        }
+        p {
+          max-width: 1000px;
+          font-size: 48px;
+          line-height: 64px;
+          font-weight: 800;
+          text-align: center;
+          @include respond-phone {
+            max-width: 400px;
+            font-size: 24px;
+            line-height: 32px;
+          }
+        }
+        &__btns {
+          max-width: 160px;
+          margin-top: 48px;
+          @include respond-phone {
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+    &__thanh-tuu {
+      background-image: url("https://gtvseo.com/wp-content/uploads/2022/01/bg-thanh-tuu.png");
+      .content {
+        max-width: 825px;
+        &__head {
+          p {
+            font-size: 48px;
+            line-height: 64px;
+            font-weight: 600;
+          }
+        }
+        &__boxs {
+          .border-x {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 96px;
+              top: 30px;
+              border-right: 1px solid white;
+              border-left: 1px solid white;
+              @include respond-tabPort {
+                border-right: 0;
+              }
+            }
+          }
+          .border-r-x {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 96px;
+              top: 30px;
+              border-right: 1px solid white;
+              @include respond-tabPort {
+                border-left: 1px solid white;
+                border-right: 0;
+              }
+            }
+          }
+          .card {
+            background-color: transparent;
+            box-shadow: none;
+            p {
+              font-size: 17px;
+              line-height: 32px;
+              text-align: center;
+              &.title {
+                font-size: 48px;
+                line-height: 64px;
+                font-weight: 600;
+                @include respond-phone {
+                  font-size: 28px;
+                  line-height: 40px;
+                }
+              }
+            }
+          }
+        }
+        @include respond-phone {
+          .sm-col {
+            max-width: 50%;
+          }
+        }
+      }
+    }
+    &__banner-2 {
+      .content {
+        background-color: #2ad5ff;
+        border-radius: 16px;
+        &__box-left {
+          padding: 48px 0 48px 48px;
+          @include respond-phone {
+            padding: 45px 20px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 32px;
+            &.title {
+              font-size: 40px;
+              line-height: 54px;
+              font-weight: 600;
+              margin-bottom: 8px !important;
+            }
+          }
+          .btn {
+            max-width: 96px;
+            padding: 12px 32px;
+            background: white;
+            border-radius: 6px;
+            margin-top: 32px;
+          }
+        }
+        &__box-right {
+          img.arrow {
+            max-height: 158px;
+            margin-top: 76px;
+            margin-right: 22px;
+            @include respond-tabPort {
+              display: none;
+            }
+          }
+          img.bradius {
+            border-radius: 0 16px 16px 0;
+            @include respond-tabPort {
+              display: none;
+            }
+          }
+          img.bradius-mb {
+            display: none;
+            @include respond-tabPort {
+              display: block;
+              border-radius: 0 0 16px 16px;
+            }
+          }
+        }
+        @include respond-tabPort {
+          .flex {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+    &__category {
+      @include respond-phone {
+        padding-top: 0;
+      }
+      .content {
+        &__head {
+          max-width: 800px;
+        }
+        &__tabs {
+          border-top: 1px solid #e2e5ed;
+          border-bottom: 1px solid #e2e5ed;
+          @include respond-tabPort {
+            .container {
+              width: 100%;
+            }
+          }
+          .tabs {
+            &.flex {
+              overflow: hidden;
+              @include respond-tabPort {
+                display: none;
+              }
+              button {
+                outline: none;
+                font-size: 16px;
+                border: none;
+                background-color: #f4f5f7;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #969bab;
+                &.active,
+                &:hover {
+                  background-color: #eeeff4;
+                  font-weight: bold;
+                  color: #18191f;
+                  border-bottom: 2px solid #18191f;
+                }
+              }
+            }
+          }
+          .tabs.mb {
+            display: none;
+            position: relative;
+            @include respond-tabPort {
+              display: block;
+            }
+            button {
+              width: 100%;
+              height: 80px;
+              border: none;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              span {
+                display: block;
+                width: 90%;
+              }
+              .fas.fa-angle-down {
+                font-size: 24px;
+              }
+            }
+            ul {
+              position: absolute;
+              top: 65px;
+              width: 100%;
+              background: #f4f5f7;
+              list-style: none;
+              padding: 0;
+              li {
+                text-align: center;
+                padding: 8px 0;
+                font-size: 14px;
+                cursor: pointer;
+                &:hover {
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+        .tabs_text {
+          .tabcontent {
+            padding: 64px 0 0;
+            display: none;
+            @include respond-tabPort {
+              padding: 32px 0 0;
+            }
+            p {
+              font-size: 18px;
+              line-height: 32px;
+              margin-bottom: 16px !important;
+              @include respond-tabPort {
+                margin-bottom: 0 !important;
+              }
+            }
+            ul {
+              margin: 0;
+              @include respond-tabPort {
+                padding-left: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__video {
+      padding-top: 0px;
+      .content {
+        .flex {
+          align-items: center;
+          @include respond-tabPort {
+            flex-direction: column;
+          }
+        }
+        &__head {
+          margin-right: 64px;
+          @include respond-tabPort {
+            margin-bottom: 48px;
+            margin-right: 0;
+          }
+          h2 {
+            text-align: left;
+            @include respond-tabPort {
+              text-align: center;
+            }
+          }
+        }
+        iframe {
+          max-width: 100%;
+        }
+      }
+    }
+    &__dang-ky {
+      @include respond-phone {
+        padding-top: 0;
+      }
+      .content {
+        &__head {
+          max-width: 540px;
+          @include respond-tabPort {
+            max-width: 90%;
+          }
+          h2 {
+            text-align: left;
+            @include respond-tabPort {
+              text-align: center;
+            }
+          }
+          ul {
+            padding-left: 24px;
+          }
+        }
+        @include respond-tabPort {
+          .flex {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+    &__cau-hoi {
+      .content {
+        &__head {
+          max-width: 700px;
+          h2 {
+            text-align: center;
+          }
+        }
+        &__collapse {
+          max-width: 850px;
+          .accordion-contianer {
+            border: 3px solid #f5f5f5;
+            margin-bottom: 24px;
+            border-radius: 21px;
+          }
+          .accordion {
+            background-color: #fff;
+            color: #001a49;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 18px 40px;
+            width: 100%;
+            text-align: left;
+            transition: 0.4s;
+            font-size: 20px;
+            line-height: 24px;
+            border-radius: 21px;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn {
+              width: 48px;
+              height: 48px;
+              background: rgba(86, 204, 242, 0.2);
+              mix-blend-mode: normal;
+              border-radius: 99px;
+              // margin-left: 32px;
+              .fa-angle-down {
+                font-size: 20px;
+                transition: 0.5s all ease-in-out;
+              }
+            }
+            &.active {
+              border-radius: 21px 21px 0 0;
+              .fa-angle-down {
+                transform: rotate(180deg);
+                transition: 0.5s all ease-in-out;
+              }
+              & + .panel {
+                border-radius: 0 0 21px 21px;
+              }
+            }
+          }
+          .panel {
+            padding: 0 40px 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            p,
+            li {
+              font-size: 16px;
+            }
+            ol {
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+    }
+    &__map {
+      background-color: #e3eef8;
+    }
+  }
+  .modal {
+    font-family: "Inter";
+    display: none;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 1;
+    padding-top: 72px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    &-content {
+      margin: auto;
+      max-width: 1200px;
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+      background-color: white;
+      overflow: auto;
+      height: 85vh;
+      max-height: 2000px;
+      .flex {
+        .modal-title {
+          background: #eeeff4;
+          box-shadow: 0px 2px 0px #d4d8e1;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 28px;
+            line-height: 40px;
+          }
+        }
+        .modal-table {
+          table {
+            width: 100%;
+            border-spacing: 0px;
+            margin-right: 0;
+            td,
+            th {
+              padding: 14px;
+            }
+            th,
+            .head.uppercase {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 30px;
+              text-transform: uppercase;
+            }
+            tr:nth-child(even) {
+              background-color: #eeeff4;
+            }
+            tr > td:first-child {
+              font-size: 14px;
+              line-height: 24px;
+              text-align: left;
+              max-width: 500px;
+            }
+            td {
+              font-size: 14px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+      &:hover,
+      &:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @keyframes intro {
+    0% {
+      color: #276ae3;
+    }
+    25% {
+      color: #ff5250;
+    }
+    50% {
+      color: #276ae3;
+    }
+    75% {
+      color: #ff5250;
+    }
+    100% {
+      color: #276ae3;
+    }
+  }
+}
